@@ -1,0 +1,20 @@
+<?xml version='1.0' ?>
+<launch>
+    <node pkg="joy" exec="joy_node" name="joy_node"></node>
+
+    <node pkg="teleop_twist_joy" exec="teleop_node" name="teleop">
+        <remap from="cmd_vel" to="left_cmd_vel"/>
+
+        <param name="axis_linear.x" value="0"/>
+        <param name="axis_linear.y" value="1"/>
+        
+        <param name="scale_linear.x" value="0.25"/>
+        <param name="scale_linear.y" value="-0.25"/>
+        
+        <param name="scale_linear_turbo.x" value="0.6"/>
+        <param name="scale_linear_turbo.y" value="-0.6"/>
+        
+        <param name="require_enable_button" value="false"/>
+        <param name="enable_turbo_button" value="4"/>
+    </node>
+</launch>

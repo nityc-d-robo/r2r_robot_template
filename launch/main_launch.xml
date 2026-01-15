@@ -1,0 +1,4 @@
+<?xml version='1.0' ?>
+<launch>
+    <node pkg="a_2025" exec="r2r_robot_template"></node>
+</launch>

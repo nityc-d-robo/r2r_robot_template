@@ -1,0 +1,8 @@
+[package]
+name = "r2r_robot_template"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+safe_drive = "0.4"
+motor_lib = { git = "https://github.com/nityc-d-robo/motor_lib.git", branch = "master"}
