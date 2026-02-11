@@ -1,4 +1,4 @@
 <?xml version='1.0' ?>
 <launch>
-    <node pkg="r2r_robot_template" exec="main_node"></node>
+    <node pkg="r2r_robot_template" exec="r2r_robot_template"></node>
 </launch>
